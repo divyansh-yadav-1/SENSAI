@@ -6,7 +6,6 @@
 ---
 **SensAI** is a cutting-edge, full-stack AI-powered career coach application built with the latest technologies in the React and Next.js ecosystem. It intelligently guides users in their career journey by leveraging the **Gemini API**, and integrates powerful tools like **Clerk**, **Inngest**, and **Prisma** to deliver a seamless, scalable, and secure user experience.
 
-> 🧠 Built for developers who want to *impress recruiters* and showcase real-world full-stack development skills on their resumes.
 
 ---
 
