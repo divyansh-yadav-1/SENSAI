@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🚀 SensAI – Full Stack AI Career Coach
+## 🖼️ Demo
 
-## Getting Started
+[🔗 Live Demo](#) – https://sensai-three-taupe.vercel.app
 
-First, run the development server:
+---
+**SensAI** is a cutting-edge, full-stack AI-powered career coach application built with the latest technologies in the React and Next.js ecosystem. It intelligently guides users in their career journey by leveraging the **Gemini API**, and integrates powerful tools like **Clerk**, **Inngest**, and **Prisma** to deliver a seamless, scalable, and secure user experience.
+
+
+---
+
+## ✨ Features
+
+- 🔐 **Clerk Authentication** – Secure and modern auth solution with social logins
+- 🌈 **Shadcn UI** – Beautiful and customizable component library
+- 🧵 **Tailwind CSS** – Utility-first CSS framework for styling
+- ⚡ **Gemini API** – Integrates Google’s Gemini AI for personalized career coaching
+- 🧬 **Prisma + NeonDB** – Modern ORM with serverless Postgres for efficient data access
+- 🧠 **Inngest** – Job scheduling, background tasks, and event-driven actions
+- 🛠️ **Next.js 15 + React 19** – Cutting-edge full-stack web development framework
+
+---
+
+## 📂 Tech Stack
+
+| Frontend | Backend | Database | Auth | AI | UI |
+|----------|---------|----------|------|----|----|
+| React 19 | Next.js 15 | NeonDB (Postgres) | Clerk | Gemini API | Shadcn UI |
+| Tailwind CSS | Inngest | Prisma | - | - | - |
+
+---
+## 🔑 Environment Variables
+
+Create a `.env` file in your root and add the following:
+
+```env
+# Clerk Auth
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_test_...
+CLERK_SECRET_KEY=sk_test_...
+
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/onboarding
+NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/onboarding
+
+# PostgreSQL Database (NeonDB)
+DATABASE_URL=postgresql://<username>:<password>@<host>/<database>?sslmode=require
+
+# Gemini API
+GEMINI_API_KEY=AIza...
+
+
+## 📌 Installation
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+# Clone the repo
+git clone https://github.com/your-username/sensai.git
+cd sensai
+
+# Install dependencies
+pnpm install
+
+# Set up environment variables
+cp .env.example .env
+
+# Fill in your own API keys and config in .env
+
+# Run the development server
 pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
