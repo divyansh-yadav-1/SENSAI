@@ -51,11 +51,6 @@ useEffect(()=>{
                 Get Started
               </Button>
             </Link>
-            <Link href="https://www.youtube.com/watch?v=2X6v0g1x4m8">
-              <Button size="lg" className="px-8 ml-4" variant="outline">
-                Watch Demo
-              </Button>
-            </Link>
           </div>
           <div className='hero-image-wrapper mt-5 md:mt-0'>
             <div ref={imageRef} className='hero-image'>
